@@ -16,12 +16,6 @@ namespace PII
 
 
 
-
-
-
-
-
-
         public void Conectar()
         {
             string aux = "SERVER=.\\SQLEXPRESS;Database=GestaoEscolar;UID=sa;PWD=123";
@@ -50,6 +44,8 @@ namespace PII
             da.Fill(ds);
             return ds;
         }
+
+
 
         public int GetCursoId(string nomeCurso)
         {
@@ -512,13 +508,10 @@ namespace PII
                     }
                     else
                     {
-                        MessageBox.Show("Aluno não encontrado com o nome informado.");
+                       
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erro ao obter ID do aluno: " + ex.Message);
-                }
+                
                 finally
                 {
                     Desconectar();
@@ -561,7 +554,35 @@ namespace PII
             return aulasReforco;
         }
 
-      
+        public DataSet ListarDados2(string query)
+        {
+            try
+            {
+                Conectar();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, conn);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+
+                if (ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+                    return ds;
+                }
+                else
+                {
+                    throw new Exception("Consulta retornou zero registros.");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro no método ListarDados: " + ex.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+
 
 
 
