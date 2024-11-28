@@ -17,7 +17,7 @@ namespace PII
         private string motivo;
         private DateTime dataFim;
 
-        // Propriedades
+        // Propriedade
         public int IdAulaReforco { get => idAulaReforco; set => idAulaReforco = value; }
         public int IdDisciplina { get => idDisciplina; set => idDisciplina = value; }
         public string Motivo { get => motivo; set => motivo = value; }
