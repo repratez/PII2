@@ -123,6 +123,7 @@
             button3.TabIndex = 3;
             button3.Text = "Sair";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel1
             // 
@@ -163,8 +164,8 @@
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.sideBar.Controls.Add(this.menuContainer);
             this.sideBar.Controls.Add(this.panel18);
-            this.sideBar.Controls.Add(this.panel19);
             this.sideBar.Controls.Add(this.panel5);
+            this.sideBar.Controls.Add(this.panel19);
             this.sideBar.Controls.Add(this.panel4);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.Location = new System.Drawing.Point(0, 32);
@@ -360,7 +361,7 @@
             this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.Image = global::PII.Properties.Resources.Envelope;
             this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button15.Location = new System.Drawing.Point(-23, -10);
             this.button15.Name = "button15";
@@ -369,11 +370,12 @@
             this.button15.TabIndex = 3;
             this.button15.Text = "Ouvidoria";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // panel19
             // 
             this.panel19.Controls.Add(this.button16);
-            this.panel19.Location = new System.Drawing.Point(3, 95);
+            this.panel19.Location = new System.Drawing.Point(3, 145);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(203, 44);
             this.panel19.TabIndex = 115;
@@ -384,7 +386,7 @@
             this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
+            this.button16.Image = global::PII.Properties.Resources.Copybook;
             this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button16.Location = new System.Drawing.Point(-23, -10);
             this.button16.Name = "button16";
@@ -397,7 +399,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.button4);
-            this.panel5.Location = new System.Drawing.Point(3, 145);
+            this.panel5.Location = new System.Drawing.Point(3, 95);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(203, 44);
             this.panel5.TabIndex = 6;

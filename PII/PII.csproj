@@ -117,6 +117,7 @@
     <Compile Include="popup.Designer.cs">
       <DependentUpon>popup.cs</DependentUpon>
     </Compile>
+    <Compile Include="professor.cs" />
     <Compile Include="RegistroProfessores.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -135,5 +135,12 @@ namespace PII
                 cboDisciplina.DataSource = null;
             }
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistrarCurso reg = new RegistrarCurso();
+            reg.ShowDialog();
+        }
     }
 }

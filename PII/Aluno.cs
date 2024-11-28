@@ -11,6 +11,7 @@ namespace PII
     internal class Aluno
     {
 
+
         private Conexao objetoConexao = new Conexao();
 
         private int codigo_Aluno;
@@ -33,9 +34,16 @@ namespace PII
         public string CPF { get => cpf; set => cpf = value; }
 
         // Método para incluir um novo aluno
+
+        private int idCurso; // Variável para armazenar o código do curso
+
+        // Propriedade Getters e Setters
+        public int IdCurso { get => IdCurso1; set => IdCurso1 = value; }
+        public int IdCurso1 { get => idCurso; set => idCurso = value; }
+
         public void Incluir()
         {
-            string sql = "Insert into Aluno (Nome_Aluno, Data_Nascimento, Endereco, Email, Telefone, RG, CPF) values ('"
+            string sql = "Insert into Aluno (nomeAluno, dataNascimento, endereco, email, telefone, rg, cpf) values ('"
                 + Nome_Aluno + "', '" + Data_Nascimento.ToString("yyyy-MM-dd") + "', '" + Endereco + "', '"
                 + Email + "', '" + Telefone + "', '" + RG + "', '" + CPF + "')";
             objetoConexao.Conectar();
@@ -46,8 +54,7 @@ namespace PII
         // Método para alterar os dados de um aluno
         public void Alterar()
         {
-            string sql = "";
-            sql = $"Update Aluno set Nome_Aluno = '{Nome_Aluno}', Data_Nascimento = '{Data_Nascimento.ToString("yyyy-MM-dd")}', Endereco = '{Endereco}', Email = '{Email}', Telefone = '{Telefone}', RG = '{RG}', CPF = '{CPF}' where Codigo_Aluno = " + Codigo_Aluno.ToString();
+            string sql = $"Update Aluno set nomeAluno = '{Nome_Aluno}', dataNascimento = '{Data_Nascimento.ToString("yyyy-MM-dd")}', endereco = '{Endereco}', email = '{Email}', telefone = '{Telefone}', rg = '{RG}', cpf = '{CPF}' where idAluno = " + Codigo_Aluno.ToString();
 
             // Conecta ao banco e executa o comando
             objetoConexao.Conectar();
@@ -58,13 +65,11 @@ namespace PII
         // Método para excluir um aluno
         public void Excluir()
         {
-            string sql = "Delete from Aluno where Codigo_Aluno = " + Codigo_Aluno.ToString();
+            string sql = "Delete from Aluno where idAluno = " + Codigo_Aluno.ToString();
             objetoConexao.Conectar();
             objetoConexao.Executar(sql);
             objetoConexao.Desconectar();
         }
-
-
 
         // Método para pesquisar os dados dos alunos
         public DataSet PesquisaDados()
@@ -106,6 +111,16 @@ namespace PII
             return listaAlunos;
         }
 
+        public void AlterarCurso(int codigoCurso)
+        {
+            // Atualiza o curso do aluno no banco de dados
+            string sql = $"UPDATE Aluno SET idCurso = {codigoCurso} WHERE idAluno = {Codigo_Aluno}";
+
+            // Conectar e executar a consulta
+            objetoConexao.Conectar();
+            objetoConexao.Executar(sql);
+            objetoConexao.Desconectar();
+        }
     }
 }
 

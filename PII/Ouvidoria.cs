@@ -8,23 +8,7 @@ namespace PII
     {
         public Ouvidoria()
         {
-            InitializeComponent();
-            // Configurações para o DataGridView
-            dataGridView1.ColumnHeadersVisible = false; // Remove os cabeçalhos
-            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Seleção da linha inteira
-
-            // Remover as linhas de grade
-            dataGridView1.GridColor = System.Drawing.Color.White;
-
-            // Remover as linhas de bordas da célula
-            dataGridView1.BorderStyle = BorderStyle.None;
-
-            // Desabilitar a ordenação nas colunas
-            dataGridView1.AllowUserToOrderColumns = false;
-
-            // Desabilitar edição nas células
-            dataGridView1.AllowUserToAddRows = false;  // Desabilita a linha de "nova linha"
-            dataGridView1.ReadOnly = true; // Torna todas as células de somente leitura
+           
         }
 
         private void Ouvidoria_Load(object sender, EventArgs e)
@@ -45,37 +29,19 @@ namespace PII
 
         private void button7_Click(object sender, EventArgs e)
         {
-            // Abre o OpenFileDialog para o usuário selecionar um arquivo
-            OpenFileDialog openFileDialog = new OpenFileDialog();
 
-            // Verifica se o usuário selecionou um arquivo
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                // Recupera o nome do arquivo e a extensão
-                string fileName = System.IO.Path.GetFileName(openFileDialog.FileName);
-                string fileExtension = System.IO.Path.GetExtension(openFileDialog.FileName);
-
-                // Verifica se as colunas já foram criadas. Se não, cria as colunas.
-                if (dataGridView1.Columns.Count == 0)
-                {
-                    // Adiciona as colunas de nome do arquivo e extensão
-                    dataGridView1.Columns.Add("FileName", "Nome do Arquivo");
-
-                }
-
-                // Adiciona o nome do arquivo e extensão no DataGridView
-                dataGridView1.Rows.Add(fileName, fileExtension);
-            }
         }
+    
 
-        private void button10_Click(object sender, EventArgs e)
-        {
+    private void button10_Click(object sender, EventArgs e)
+    {
 
-            popup homeAlunoForm = new popup(this);
+        popup homeAlunoForm = new popup(this);
 
-            // Exibe o pop-up
-            homeAlunoForm.ShowDialog();
-        }
+        // Exibe o pop-up
+        homeAlunoForm.ShowDialog();
+    }
+
 
         public void LimparCampos()
         {
@@ -125,7 +91,7 @@ namespace PII
                 }
 
                 // Limpar DataGridView (remover todas as linhas)
-                dataGridView1.Rows.Clear();  // Isso remove todas as linhas de dados
+               // Isso remove todas as linhas de dados
 
 
 

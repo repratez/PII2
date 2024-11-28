@@ -117,7 +117,22 @@ namespace PII
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Login reg = new Login();
+            reg.ShowDialog();
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
             this.Close();
+            Login reg = new Login();
+            reg.ShowDialog();
         }
     }
 }

@@ -16,7 +16,7 @@ namespace PII
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegistroProfessores());
+            Application.Run(new registro());
         }
     }
 }

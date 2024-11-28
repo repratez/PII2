@@ -34,6 +34,15 @@ namespace PII
             return ds;
         }
 
+        public DataSet PesquisaDados()
+        {
+            string sql = "Select * from Disciplina";
+            objetoConexao.Conectar();
+            DataSet ds = objetoConexao.ListarDados(sql);
+            objetoConexao.Desconectar();
+            return ds;
+        }
+
         /*public void Excluir()
         {
             string sql = "Delete from Categoria where Codigo_Categoria = " + Codigo_Categoria.ToString();

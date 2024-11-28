@@ -29,21 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroProfessores));
             System.Windows.Forms.Button button10;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroProfessores));
             this.txtData = new System.Windows.Forms.TextBox();
             this.sideBar = new System.Windows.Forms.FlowLayoutPanel();
             this.menuContainer = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.menu = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.menuTransition = new System.Windows.Forms.Timer(this.components);
@@ -54,34 +63,30 @@
             this.label5 = new System.Windows.Forms.Label();
             this.UNIFENAS = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.btnHam = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.E = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtRg = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.menu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnHam = new System.Windows.Forms.PictureBox();
+            this.txtCpf = new System.Windows.Forms.TextBox();
+            this.E = new System.Windows.Forms.Label();
+            this.registrar = new System.Windows.Forms.Button();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.cboDisciplina = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
             button10 = new System.Windows.Forms.Button();
             this.sideBar.SuspendLayout();
             this.menuContainer.SuspendLayout();
@@ -92,16 +97,34 @@
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel13.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button10
+            // 
+            button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button10.ForeColor = System.Drawing.Color.White;
+            button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button10.Location = new System.Drawing.Point(-23, -10);
+            button10.Name = "button10";
+            button10.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
+            button10.Size = new System.Drawing.Size(213, 68);
+            button10.TabIndex = 3;
+            button10.Text = "Sair";
+            button10.UseVisualStyleBackColor = false;
+            button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // txtData
             // 
@@ -151,6 +174,23 @@
             this.panel6.Size = new System.Drawing.Size(200, 42);
             this.panel6.TabIndex = 6;
             // 
+            // menu
+            // 
+            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.menu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu.ForeColor = System.Drawing.Color.White;
+            this.menu.Image = global::PII.Properties.Resources.User_Male;
+            this.menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu.Location = new System.Drawing.Point(-16, -12);
+            this.menu.Margin = new System.Windows.Forms.Padding(0);
+            this.menu.Name = "menu";
+            this.menu.Padding = new System.Windows.Forms.Padding(17, 0, 87, 0);
+            this.menu.Size = new System.Drawing.Size(232, 68);
+            this.menu.TabIndex = 4;
+            this.menu.Text = "Cadastros";
+            this.menu.UseVisualStyleBackColor = false;
+            this.menu.Click += new System.EventHandler(this.menu_Click_1);
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -171,6 +211,24 @@
             this.panel2.Size = new System.Drawing.Size(200, 42);
             this.panel2.TabIndex = 2;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(-23, -10);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 100, 0);
+            this.button1.Size = new System.Drawing.Size(232, 68);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Aluno";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.panel9);
@@ -189,6 +247,40 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(200, 42);
             this.panel9.TabIndex = 5;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(-23, -10);
+            this.button5.Margin = new System.Windows.Forms.Padding(0);
+            this.button5.Name = "button5";
+            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
+            this.button5.Size = new System.Drawing.Size(232, 68);
+            this.button5.TabIndex = 3;
+            this.button5.Text = "Professor";
+            this.button5.UseVisualStyleBackColor = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.White;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button6.Location = new System.Drawing.Point(-23, -10);
+            this.button6.Margin = new System.Windows.Forms.Padding(0);
+            this.button6.Name = "button6";
+            this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
+            this.button6.Size = new System.Drawing.Size(232, 68);
+            this.button6.TabIndex = 3;
+            this.button6.Text = "Professor";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
             // panel10
             // 
@@ -209,6 +301,40 @@
             this.panel11.Size = new System.Drawing.Size(200, 42);
             this.panel11.TabIndex = 5;
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.Color.White;
+            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
+            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button8.Location = new System.Drawing.Point(-23, -10);
+            this.button8.Margin = new System.Windows.Forms.Padding(0);
+            this.button8.Name = "button8";
+            this.button8.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
+            this.button8.Size = new System.Drawing.Size(232, 68);
+            this.button8.TabIndex = 3;
+            this.button8.Text = "Professor";
+            this.button8.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(-23, -10);
+            this.button9.Margin = new System.Windows.Forms.Padding(0);
+            this.button9.Name = "button9";
+            this.button9.Padding = new System.Windows.Forms.Padding(25, 0, 30, 0);
+            this.button9.Size = new System.Drawing.Size(232, 68);
+            this.button9.TabIndex = 3;
+            this.button9.Text = "Cursos e Disciplinas";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
+            // 
             // panel13
             // 
             this.panel13.Controls.Add(this.button3);
@@ -218,13 +344,22 @@
             this.panel13.Size = new System.Drawing.Size(203, 44);
             this.panel13.TabIndex = 118;
             // 
-            // panel3
+            // button3
             // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(3, 149);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 44);
-            this.panel3.TabIndex = 115;
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::PII.Properties.Resources.Envelope;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(-23, -10);
+            this.button3.Name = "button3";
+            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
+            this.button3.Size = new System.Drawing.Size(232, 68);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Ouvidoria";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // panel5
             // 
@@ -233,6 +368,47 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(203, 44);
             this.panel5.TabIndex = 117;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-23, -10);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 90, 0);
+            this.button4.Size = new System.Drawing.Size(235, 68);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Boletim";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(3, 149);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(203, 44);
+            this.panel3.TabIndex = 115;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::PII.Properties.Resources.Copybook;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-23, -10);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 42, 0);
+            this.button2.Size = new System.Drawing.Size(232, 68);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Aulas de reforço";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -266,9 +442,9 @@
             // 
             this.comboBoxCurso.BackColor = System.Drawing.SystemColors.Menu;
             this.comboBoxCurso.FormattingEnabled = true;
-            this.comboBoxCurso.Location = new System.Drawing.Point(403, 254);
+            this.comboBoxCurso.Location = new System.Drawing.Point(403, 249);
             this.comboBoxCurso.Name = "comboBoxCurso";
-            this.comboBoxCurso.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxCurso.Size = new System.Drawing.Size(142, 21);
             this.comboBoxCurso.TabIndex = 52;
             // 
             // label7
@@ -308,9 +484,8 @@
             this.UNIFENAS.ForeColor = System.Drawing.Color.White;
             this.UNIFENAS.Location = new System.Drawing.Point(61, 8);
             this.UNIFENAS.Name = "UNIFENAS";
-            this.UNIFENAS.Size = new System.Drawing.Size(68, 17);
+            this.UNIFENAS.Size = new System.Drawing.Size(0, 17);
             this.UNIFENAS.TabIndex = 2;
-            this.UNIFENAS.Text = "UNIFENAS";
             // 
             // panel1
             // 
@@ -323,6 +498,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1280, 32);
             this.panel1.TabIndex = 35;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1238, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 21);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // btnHam
+            // 
+            this.btnHam.Image = ((System.Drawing.Image)(resources.GetObject("btnHam.Image")));
+            this.btnHam.Location = new System.Drawing.Point(12, 3);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(31, 25);
+            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnHam.TabIndex = 1;
+            this.btnHam.TabStop = false;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
             // 
             // label6
             // 
@@ -348,8 +545,8 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel12.Controls.Add(this.label9);
             this.panel12.Controls.Add(this.E);
+            this.panel12.Controls.Add(this.label9);
             this.panel12.Controls.Add(this.pictureBox1);
             this.panel12.Location = new System.Drawing.Point(1079, 32);
             this.panel12.Name = "panel12";
@@ -367,16 +564,15 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Ensino Mackenzie";
             // 
-            // E
+            // pictureBox1
             // 
-            this.E.AutoSize = true;
-            this.E.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.E.ForeColor = System.Drawing.Color.White;
-            this.E.Location = new System.Drawing.Point(16, 81);
-            this.E.Name = "E";
-            this.E.Size = new System.Drawing.Size(118, 30);
-            this.E.TabIndex = 1;
-            this.E.Text = "UNIFENAS";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(31, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(88, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label4
             // 
@@ -441,16 +637,16 @@
             this.txtEndereco.Size = new System.Drawing.Size(311, 28);
             this.txtEndereco.TabIndex = 88;
             // 
-            // textBox1
+            // txtRg
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(745, 193);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 28);
-            this.textBox1.TabIndex = 94;
+            this.txtRg.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtRg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRg.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRg.Location = new System.Drawing.Point(745, 193);
+            this.txtRg.Multiline = true;
+            this.txtRg.Name = "txtRg";
+            this.txtRg.Size = new System.Drawing.Size(311, 28);
+            this.txtRg.TabIndex = 94;
             // 
             // label10
             // 
@@ -483,219 +679,76 @@
             this.textBox3.Size = new System.Drawing.Size(311, 28);
             this.textBox3.TabIndex = 95;
             // 
-            // textBox2
+            // txtCpf
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(745, 123);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(311, 28);
-            this.textBox2.TabIndex = 96;
+            this.txtCpf.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCpf.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(745, 123);
+            this.txtCpf.Multiline = true;
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(311, 28);
+            this.txtCpf.TabIndex = 96;
             // 
-            // menu
+            // E
             // 
-            this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.menu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menu.ForeColor = System.Drawing.Color.White;
-            this.menu.Image = global::PII.Properties.Resources.User_Male;
-            this.menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu.Location = new System.Drawing.Point(-16, -12);
-            this.menu.Margin = new System.Windows.Forms.Padding(0);
-            this.menu.Name = "menu";
-            this.menu.Padding = new System.Windows.Forms.Padding(17, 0, 87, 0);
-            this.menu.Size = new System.Drawing.Size(232, 68);
-            this.menu.TabIndex = 4;
-            this.menu.Text = "Cadastros";
-            this.menu.UseVisualStyleBackColor = false;
-            this.menu.Click += new System.EventHandler(this.menu_Click_1);
+            this.E.AutoSize = true;
+            this.E.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.E.ForeColor = System.Drawing.Color.White;
+            this.E.Location = new System.Drawing.Point(6, 81);
+            this.E.Name = "E";
+            this.E.Size = new System.Drawing.Size(145, 30);
+            this.E.TabIndex = 2;
+            this.E.Text = "Unity College";
             // 
-            // button1
+            // registrar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(-23, -10);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(25, 0, 100, 0);
-            this.button1.Size = new System.Drawing.Size(232, 68);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Aluno";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.registrar.Location = new System.Drawing.Point(1090, 258);
+            this.registrar.Name = "registrar";
+            this.registrar.Size = new System.Drawing.Size(75, 23);
+            this.registrar.TabIndex = 97;
+            this.registrar.Text = "button7";
+            this.registrar.UseVisualStyleBackColor = true;
+            this.registrar.Click += new System.EventHandler(this.registrar_Click);
             // 
-            // button5
+            // txtTelefone
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(-23, -10);
-            this.button5.Margin = new System.Windows.Forms.Padding(0);
-            this.button5.Name = "button5";
-            this.button5.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
-            this.button5.Size = new System.Drawing.Size(232, 68);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "Professor";
-            this.button5.UseVisualStyleBackColor = false;
+            this.txtTelefone.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefone.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Location = new System.Drawing.Point(745, 258);
+            this.txtTelefone.Multiline = true;
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(311, 28);
+            this.txtTelefone.TabIndex = 94;
             // 
-            // button6
+            // label12
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(-23, -10);
-            this.button6.Margin = new System.Windows.Forms.Padding(0);
-            this.button6.Name = "button6";
-            this.button6.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
-            this.button6.Size = new System.Drawing.Size(232, 68);
-            this.button6.TabIndex = 3;
-            this.button6.Text = "Professor";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click_1);
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(741, 231);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(85, 20);
+            this.label12.TabIndex = 93;
+            this.label12.Text = "TELEFONE:";
             // 
-            // button8
+            // cboDisciplina
             // 
-            this.button8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(-23, -10);
-            this.button8.Margin = new System.Windows.Forms.Padding(0);
-            this.button8.Name = "button8";
-            this.button8.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
-            this.button8.Size = new System.Drawing.Size(232, 68);
-            this.button8.TabIndex = 3;
-            this.button8.Text = "Professor";
-            this.button8.UseVisualStyleBackColor = false;
+            this.cboDisciplina.FormattingEnabled = true;
+            this.cboDisciplina.Location = new System.Drawing.Point(560, 249);
+            this.cboDisciplina.Name = "cboDisciplina";
+            this.cboDisciplina.Size = new System.Drawing.Size(129, 21);
+            this.cboDisciplina.TabIndex = 98;
             // 
-            // button9
+            // label14
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(36)))));
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.Color.White;
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(-23, -10);
-            this.button9.Margin = new System.Windows.Forms.Padding(0);
-            this.button9.Name = "button9";
-            this.button9.Padding = new System.Windows.Forms.Padding(25, 0, 30, 0);
-            this.button9.Size = new System.Drawing.Size(232, 68);
-            this.button9.TabIndex = 3;
-            this.button9.Text = "Cursos e Disciplinas";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::PII.Properties.Resources.Envelope;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(-23, -10);
-            this.button3.Name = "button3";
-            this.button3.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
-            this.button3.Size = new System.Drawing.Size(232, 68);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Ouvidoria";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::PII.Properties.Resources.Copybook;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-23, -10);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 42, 0);
-            this.button2.Size = new System.Drawing.Size(232, 68);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Aulas de reforço";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-23, -10);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 90, 0);
-            this.button4.Size = new System.Drawing.Size(235, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Boletim";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button10.ForeColor = System.Drawing.Color.White;
-            button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button10.Location = new System.Drawing.Point(-23, -10);
-            button10.Name = "button10";
-            button10.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
-            button10.Size = new System.Drawing.Size(213, 68);
-            button10.TabIndex = 3;
-            button10.Text = "Sair";
-            button10.UseVisualStyleBackColor = false;
-            button10.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(31, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1238, 4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // btnHam
-            // 
-            this.btnHam.Image = ((System.Drawing.Image)(resources.GetObject("btnHam.Image")));
-            this.btnHam.Location = new System.Drawing.Point(12, 3);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(31, 25);
-            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnHam.TabIndex = 1;
-            this.btnHam.TabStop = false;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(556, 226);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(96, 20);
+            this.label14.TabIndex = 50;
+            this.label14.Text = "DISCIPLINA:";
             // 
             // RegistroProfessores
             // 
@@ -703,11 +756,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 680);
+            this.Controls.Add(this.cboDisciplina);
+            this.Controls.Add(this.registrar);
             this.Controls.Add(this.sideBar);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtRg);
             this.Controls.Add(this.panel12);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label4);
@@ -719,6 +776,7 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.comboBoxCurso);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtData);
             this.Controls.Add(this.label6);
@@ -738,18 +796,18 @@
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -774,7 +832,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label E;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
@@ -782,11 +839,11 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtEndereco;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtRg;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtCpf;
         private System.Windows.Forms.FlowLayoutPanel menuContainer;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button menu;
@@ -808,5 +865,11 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label E;
+        private System.Windows.Forms.Button registrar;
+        private System.Windows.Forms.TextBox txtTelefone;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox cboDisciplina;
+        private System.Windows.Forms.Label label14;
     }
 }

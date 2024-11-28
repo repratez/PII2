@@ -117,13 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>296, 17</value>
-  </metadata>
-  <metadata name="button3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="button2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAQVJREFUSEvd
+        leENgjAQhRnBERyBDWQDGcFNZAMdxQ10A0fQDXADfK+9xkKuDVzxD1/yYuw77sVrqdU2GYbhBJ2NqqVN
+        HhQ+ICu9tMmDwpIQ0kgrHRTU0NOV/nhDDE5pSgPtoB5qpbVHTI1OSlSkJoZ9Qq/xs1hgegdd6UasFxID
+        8+NrHKv+Eu7HHXrRjeB3rqc0hQGcCj/30t6DBYZwI7nRJYSQAzQOiYEZj2sp2XExnW/thW4B2ZBglJIO
+        IVjkvrTOtjMr5OhsO+lrhaavKYZ99NMlhvbGLyU/rgDM/xzhAIyb983MCtGu7yUwgKNnH/0QiGnlI23y
+        oJD/8TwAFqXvqo1QVV8ww9PxxCTwngAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <metadata name="button3.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
   <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
@@ -137,6 +147,9 @@
         rkJggg==
 </value>
   </data>
+  <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>296, 17</value>
+  </metadata>
   <data name="button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAALJJREFUSEvt
@@ -203,19 +216,6 @@
         NmmuAZL6JJIgSe7qkzmuPKoIIE7bzL9QlqUUlkHhoVh7O2JBeFKv/eEHR2J4DAU88v8IlYhCpcxRFEUl
         In4FHNYX5wt/+wCmgDlMkaaZbiQE7GlCgua5u5Q9GgECrHAYTNIEZsaxOy/TZ0AcKFxfZ6yR+6616QUV
         Kxqc65yEuAAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <metadata name="button2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAQVJREFUSEvd
-        leENgjAQhRnBERyBDWQDGcFNZAMdxQ10A0fQDXADfK+9xkKuDVzxD1/yYuw77sVrqdU2GYbhBJ2NqqVN
-        HhQ+ICu9tMmDwpIQ0kgrHRTU0NOV/nhDDE5pSgPtoB5qpbVHTI1OSlSkJoZ9Qq/xs1hgegdd6UasFxID
-        8+NrHKv+Eu7HHXrRjeB3rqc0hQGcCj/30t6DBYZwI7nRJYSQAzQOiYEZj2sp2XExnW/thW4B2ZBglJIO
-        IVjkvrTOtjMr5OhsO+lrhaavKYZ99NMlhvbGLyU/rgDM/xzhAIyb983MCtGu7yUwgKNnH/0QiGnlI23y
-        oJD/8TwAFqXvqo1QVV8ww9PxxCTwngAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

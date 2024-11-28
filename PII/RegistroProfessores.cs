@@ -71,7 +71,18 @@ namespace PII
 
         private void RegistroProfessores_Load(object sender, EventArgs e)
         {
+            Curso curso = new Curso();
+            Disciplina disciplina = new Disciplina();
+            comboBoxCurso.DisplayMember = "nomeCurso";
+            comboBoxCurso.ValueMember = "idCurso";
+            
+            comboBoxCurso.DataSource = curso.PesquisaDados().Tables[0];
 
+            cboDisciplina.DisplayMember = "nomeDisciplina";
+            cboDisciplina.ValueMember = "idDisciplina";
+            cboDisciplina.DataSource = disciplina.PesquisaDados().Tables[0];
+
+           
         }
 
         bool menuExpand = false;
@@ -158,5 +169,32 @@ namespace PII
             HOME reg= new HOME();
             reg.ShowDialog();
         }
+
+        professor aux = new professor();
+
+        private void registrar_Click(object sender, EventArgs e)
+        {
+            professor professor = new professor();
+
+            aux.NomeProfessor = txtNome.Text;
+            aux.Endereco1 = txtEndereco.Text;
+            aux.Email = txtEmail.Text;
+            aux.Telefone = txtTelefone.Text;
+            aux.Date = aux.Date = DateTime.Parse(txtData.Text);
+            aux.IdCurso = int.Parse(comboBoxCurso.SelectedValue.ToString());
+            aux.IdDisciplina = int.Parse(cboDisciplina.SelectedValue.ToString());
+            aux.Cpf = txtCpf.Text;
+            aux.Rg = txtRg.Text;
+
+            professor.Incluir();
+            MessageBox.Show("Produto incluido com sucesso!");
+            txtNome.Clear();
+            
+
+        }
+
+
+       
+
     }
 }

@@ -492,7 +492,9 @@ namespace PII
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            HOME reg = new HOME();
+            reg.ShowDialog();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -565,7 +567,16 @@ namespace PII
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            EditarAluno REG = new EditarAluno();
+            REG.ShowDialog();
+        }
 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HOME reg = new HOME();
+            reg.ShowDialog();
         }
     }
 }

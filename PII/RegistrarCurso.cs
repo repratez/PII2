@@ -318,5 +318,17 @@ namespace PII
         {
             menuTransition.Start();
         }
+
+        private void RegistrarCurso_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            HOME reg = new HOME();
+            reg.ShowDialog();
+        }
     }
 }

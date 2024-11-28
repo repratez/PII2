@@ -59,6 +59,36 @@ namespace PII
             return ds;
         }
 
+        public List<KeyValuePair<int, string>> ObterCursosParaComboBox()
+        {
+            // Consulta para buscar todos os cursos
+            string sql = "SELECT idCurso, nomeCurso FROM Curso";
+
+            // Conectar e executar a consulta
+            objetoConexao.Conectar();
+            DataTable dt = objetoConexao.ListarDados(sql).Tables[0]; // Obtém o DataTable com os cursos
+            objetoConexao.Desconectar();
+
+            // Verificar se a consulta retornou resultados
+            if (dt.Rows.Count == 0)
+            {
+               
+            }
+
+            // Criar a lista de cursos (idCurso, nomeCurso)
+            List<KeyValuePair<int, string>> listaCursos = new List<KeyValuePair<int, string>>();
+
+            // Preencher a lista com os cursos
+            foreach (DataRow row in dt.Rows)
+            {
+                listaCursos.Add(new KeyValuePair<int, string>((int)row["idCurso"], (string)row["nomeCurso"]));
+            }
+
+            return listaCursos;
+        }
+
+
+
 
 
 
