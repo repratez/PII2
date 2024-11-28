@@ -16,6 +16,12 @@ namespace PII
 
 
 
+
+
+
+
+
+
         public void Conectar()
         {
             string aux = "SERVER=.\\SQLEXPRESS;Database=GestaoEscolar;UID=sa;PWD=123";
