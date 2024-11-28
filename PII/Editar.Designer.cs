@@ -71,6 +71,7 @@
             this.label9.Size = new System.Drawing.Size(91, 30);
             this.label9.TabIndex = 113;
             this.label9.Text = "EDITAR:";
+            
             // 
             // label2
             // 
@@ -82,6 +83,7 @@
             this.label2.Size = new System.Drawing.Size(150, 25);
             this.label2.TabIndex = 114;
             this.label2.Text = "EDITAR CURSO:";
+         
             // 
             // label1
             // 
@@ -93,6 +95,7 @@
             this.label1.Size = new System.Drawing.Size(192, 25);
             this.label1.TabIndex = 117;
             this.label1.Text = "EDITAR DISCIPLINA:";
+         
             // 
             // button1
             // 

@@ -490,6 +490,34 @@ namespace PII
         {
 
         }
+
+        private void menu_Click_1(object sender, EventArgs e)
+        {
+            menuTransition.Start();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            registro registro = new registro();
+            registro.ShowDialog();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            RegistroProfessores registro = new RegistroProfessores();
+            registro.ShowDialog();
+
+        }
+
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            RegistrarCurso registrar = new RegistrarCurso();
+            registrar.ShowDialog();
+        }
     }
 }
 

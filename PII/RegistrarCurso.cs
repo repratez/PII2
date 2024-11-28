@@ -218,18 +218,21 @@ namespace PII
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             registro reg = new registro();
             reg.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistroProfessores registro = new RegistroProfessores();
             registro.ShowDialog();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistrarCurso registrar = new RegistrarCurso();
             registrar.ShowDialog();
         }
@@ -249,6 +252,71 @@ namespace PII
         {
             Editar aux = new Editar();
             aux.ShowDialog();
+        }
+
+        private void menuTransition_Tick(object sender, EventArgs e)
+        {
+            if (menuExpand == false)
+            {
+                menuContainer.Height += 10;
+
+                if (menuContainer.Height >= 179)
+                {
+                    menuTransition.Stop();
+                    menuExpand = true;
+
+                }
+
+            }
+
+            else
+            {
+                menuContainer.Height -= 10;
+                if (menuContainer.Height <= 44)
+                {
+                    menuTransition.Stop();
+                    menuExpand = false;
+                }
+
+
+
+            }
+        }
+
+        bool menuExpand = false;
+
+        bool sidebarExpand = true;
+
+        private void sidebarTransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sideBar.Width -= 5;
+                if (sideBar.Width <= 43)
+                {
+                    sidebarExpand = false;
+                    sidebarTransition.Stop();
+                }
+            }
+            else
+            {
+                sideBar.Width += 5;
+                if (sideBar.Width >= 209)
+                {
+                    sidebarExpand = true;
+                    sidebarTransition.Stop();
+                }
+            }
+        }
+
+        private void btnHam_Click(object sender, EventArgs e)
+        {
+            sidebarTransition.Start();
+        }
+
+        private void menu_Click(object sender, EventArgs e)
+        {
+            menuTransition.Start();
         }
     }
 }

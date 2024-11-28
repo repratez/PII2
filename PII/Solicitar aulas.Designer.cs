@@ -444,6 +444,7 @@
             this.dataGridAulas.Name = "dataGridAulas";
             this.dataGridAulas.Size = new System.Drawing.Size(1009, 237);
             this.dataGridAulas.TabIndex = 36;
+            this.dataGridAulas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridAulas_CellContentClick_1);
             // 
             // comboBox1
             // 

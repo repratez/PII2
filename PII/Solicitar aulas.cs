@@ -15,6 +15,8 @@ namespace PII
             SetupDataGrid();
             Conexao conexao = new Conexao();  // Instanciando a classe Conexao
             conexao.CarregarDisciplinasNoComboBox(comboBox1);
+            conexao.CarregarDisciplinasNoComboBox(comboBox1);
+            AtualizarDataGrid();
 
         }
 
@@ -24,20 +26,24 @@ namespace PII
         // Método para configurar as colunas do DataGridView
         private void SetupDataGrid()
         {
-            dataGridAulas.ColumnCount = 5;
+            dataGridAulas.ColumnCount = 5; // Ajuste para o número correto de colunas (4 colunas)
             dataGridAulas.AutoGenerateColumns = false;
 
-            // Corrigir a ordem das colunas
             dataGridAulas.Columns[0].Name = "Nome";
             dataGridAulas.Columns[0].DataPropertyName = "Nome";
-            dataGridAulas.Columns[1].Name = "Matrícula";
-            dataGridAulas.Columns[1].DataPropertyName = "Matricula";
-            dataGridAulas.Columns[2].Name = "Matéria";
-            dataGridAulas.Columns[2].DataPropertyName = "Materia";
-            dataGridAulas.Columns[3].Name = "Email";
-            dataGridAulas.Columns[3].DataPropertyName = "Email";
-            dataGridAulas.Columns[4].Name = "Data";
-            dataGridAulas.Columns[4].DataPropertyName = "Data";
+
+            dataGridAulas.Columns[1].Name = "Materia";
+            dataGridAulas.Columns[1].DataPropertyName = "Materia";
+
+            dataGridAulas.Columns[2].Name = "Motivo";
+            dataGridAulas.Columns[2].DataPropertyName = "Motivo";
+
+            dataGridAulas.Columns[3].Name = "Data"; // Última coluna
+            dataGridAulas.Columns[3].DataPropertyName = "Data";
+            dataGridAulas.Columns[3].DefaultCellStyle.Format = "dd/MM/yyyy"; // Configuração de formato de data
+
+            dataGridAulas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridAulas.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             // Ajustar as colunas para ocupar todo o espaço disponível
             dataGridAulas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -177,15 +183,44 @@ namespace PII
         // Método para atualizar o DataGridView
         private void AtualizarDataGrid()
         {
-            // Recarregar as aulas no DataGridView
-            List<Aula> aulas = new List<Aula>(); // Recarregar os dados da aula do banco de dados
+            try
+            {
+                // Instancia a conexão com o banco
+                Conexao conexao = new Conexao();
 
-            // Inserir o código necessário para buscar os dados de AulaReforco do banco de dados
+                // Comando SQL para buscar as aulas de reforço
+                string sql = @"
+        SELECT 
+        AR.idAulaReforco,
+        A.nomeAluno AS Nome,
+        D.nomeDisciplina AS Materia,
+        AR.motivo AS Motivo,
+        AR.dataFim AS Data
+    FROM AulaReforco AR
+    INNER JOIN Aluno A ON AR.idAluno = A.idAluno
+    INNER JOIN Disciplina D ON AR.idDisciplina = D.idDisciplina";
 
-            dataGridAulas.DataSource = null;
-            dataGridAulas.DataSource = aulas;
+                // Chama o método ListarDados para preencher o DataSet
+                DataSet ds = conexao.ListarDados2(sql);
+
+                // Verifica se há dados
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    // Define o DataSource do DataGridView como a tabela retornada
+                    dataGridAulas.DataSource = ds.Tables[0];
+                }
+                else
+                {
+                    MessageBox.Show("Nenhum dado encontrado!", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar os dados: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
-   
+
+
 
 
 
@@ -237,6 +272,8 @@ namespace PII
 
             }
         }
+
+
         bool sidebarExpand = false;
 
         private void sidebarTransition_Tick(object sender, EventArgs e)
@@ -278,8 +315,9 @@ namespace PII
 
         }
 
-     
+        private void dataGridAulas_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
 
-       
+        }
     }
 }

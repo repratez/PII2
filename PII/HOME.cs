@@ -88,21 +88,23 @@ namespace PII
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
             registro reg = new registro();
             reg.ShowDialog();
-
 
 
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistroProfessores ope = new RegistroProfessores();
             ope.ShowDialog();
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            this.Hide();
             RegistrarCurso opne2 = new RegistrarCurso();
             opne2.ShowDialog();
           

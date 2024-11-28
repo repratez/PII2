@@ -29,9 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
             System.Windows.Forms.Button button10;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
             this.sideBar = new System.Windows.Forms.FlowLayoutPanel();
+            this.menuContainer = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.menu = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.UNIFENAS = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -61,34 +82,8 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtDataMatricula = new System.Windows.Forms.TextBox();
-            this.menuContainer = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.menu = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
             button10 = new System.Windows.Forms.Button();
             this.sideBar.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridAlunos)).BeginInit();
             this.menuContainer.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -96,11 +91,33 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel13.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAlunos)).BeginInit();
             this.SuspendLayout();
+            // 
+            // button10
+            // 
+            button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            button10.ForeColor = System.Drawing.Color.White;
+            button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            button10.Location = new System.Drawing.Point(-23, -10);
+            button10.Name = "button10";
+            button10.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
+            button10.Size = new System.Drawing.Size(213, 68);
+            button10.TabIndex = 3;
+            button10.Text = "Sair";
+            button10.UseVisualStyleBackColor = false;
             // 
             // sideBar
             // 
@@ -113,326 +130,9 @@
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.Location = new System.Drawing.Point(0, 32);
             this.sideBar.Name = "sideBar";
-            this.sideBar.Size = new System.Drawing.Size(156, 648);
+            this.sideBar.Size = new System.Drawing.Size(43, 648);
             this.sideBar.TabIndex = 3;
             this.sideBar.Paint += new System.Windows.Forms.PaintEventHandler(this.sideBar_Paint);
-            // 
-            // UNIFENAS
-            // 
-            this.UNIFENAS.AutoSize = true;
-            this.UNIFENAS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UNIFENAS.ForeColor = System.Drawing.Color.White;
-            this.UNIFENAS.Location = new System.Drawing.Point(61, 8);
-            this.UNIFENAS.Name = "UNIFENAS";
-            this.UNIFENAS.Size = new System.Drawing.Size(68, 17);
-            this.UNIFENAS.TabIndex = 2;
-            this.UNIFENAS.Text = "UNIFENAS";
-            this.UNIFENAS.Click += new System.EventHandler(this.UNIFENAS_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.UNIFENAS);
-            this.panel1.Controls.Add(this.btnHam);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1441, 32);
-            this.panel1.TabIndex = 2;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1399, 7);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // btnHam
-            // 
-            this.btnHam.Image = ((System.Drawing.Image)(resources.GetObject("btnHam.Image")));
-            this.btnHam.Location = new System.Drawing.Point(12, 3);
-            this.btnHam.Name = "btnHam";
-            this.btnHam.Size = new System.Drawing.Size(31, 25);
-            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.btnHam.TabIndex = 1;
-            this.btnHam.TabStop = false;
-            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
-            // 
-            // menuTransition
-            // 
-            this.menuTransition.Interval = 10;
-            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
-            // 
-            // sidebarTransition
-            // 
-            this.sidebarTransition.Interval = 10;
-            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(548, 86);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 20);
-            this.label5.TabIndex = 16;
-            this.label5.Text = "Matricula:";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(548, 157);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(152, 20);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "Data de nascimento:";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // txtData
-            // 
-            this.txtData.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtData.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtData.Location = new System.Drawing.Point(552, 185);
-            this.txtData.Multiline = true;
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(311, 28);
-            this.txtData.TabIndex = 22;
-            this.txtData.TextChanged += new System.EventHandler(this.txtData_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(548, 221);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 20);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "Curso:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(1289, 231);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(100, 26);
-            this.button7.TabIndex = 28;
-            this.button7.Text = "Finalizar";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // comboBoxCurso
-            // 
-            this.comboBoxCurso.AutoCompleteCustomSource.AddRange(new string[] {
-            "matematica"});
-            this.comboBoxCurso.BackColor = System.Drawing.SystemColors.Menu;
-            this.comboBoxCurso.FormattingEnabled = true;
-            this.comboBoxCurso.Items.AddRange(new object[] {
-            "Matematica"});
-            this.comboBoxCurso.Location = new System.Drawing.Point(552, 256);
-            this.comboBoxCurso.Name = "comboBoxCurso";
-            this.comboBoxCurso.Size = new System.Drawing.Size(200, 21);
-            this.comboBoxCurso.TabIndex = 29;
-            this.comboBoxCurso.SelectedIndexChanged += new System.EventHandler(this.comboBoxCurso_SelectedIndexChanged);
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Location = new System.Drawing.Point(156, 292);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1285, 53);
-            this.panel8.TabIndex = 34;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(528, 8);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(192, 30);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "LISTA DE ALUNOS";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // dataGridAlunos
-            // 
-            this.dataGridAlunos.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridAlunos.Location = new System.Drawing.Point(156, 337);
-            this.dataGridAlunos.Name = "dataGridAlunos";
-            this.dataGridAlunos.Size = new System.Drawing.Size(1285, 343);
-            this.dataGridAlunos.TabIndex = 35;
-            this.dataGridAlunos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridAlunos_CellContentClick);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(182, 40);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 30);
-            this.label9.TabIndex = 77;
-            this.label9.Text = "REGISTRO:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(183, 220);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 20);
-            this.label4.TabIndex = 83;
-            this.label4.Text = "E-MAIL:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(183, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 20);
-            this.label1.TabIndex = 79;
-            this.label1.Text = "NOME:";
-            // 
-            // txtNome
-            // 
-            this.txtNome.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNome.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(187, 110);
-            this.txtNome.Multiline = true;
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(311, 28);
-            this.txtNome.TabIndex = 80;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged_1);
-            // 
-            // txtEmail
-            // 
-            this.txtEmail.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEmail.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail.Location = new System.Drawing.Point(187, 244);
-            this.txtEmail.Multiline = true;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(311, 28);
-            this.txtEmail.TabIndex = 84;
-            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(183, 152);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 20);
-            this.label2.TabIndex = 81;
-            this.label2.Text = "ENDEREÇO:";
-            // 
-            // txtEndereco
-            // 
-            this.txtEndereco.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEndereco.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEndereco.Location = new System.Drawing.Point(187, 176);
-            this.txtEndereco.Multiline = true;
-            this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(311, 28);
-            this.txtEndereco.TabIndex = 82;
-            this.txtEndereco.TextChanged += new System.EventHandler(this.txtEndereco_TextChanged_1);
-            // 
-            // txtCpf
-            // 
-            this.txtCpf.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCpf.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCpf.Location = new System.Drawing.Point(903, 180);
-            this.txtCpf.Multiline = true;
-            this.txtCpf.Name = "txtCpf";
-            this.txtCpf.Size = new System.Drawing.Size(311, 28);
-            this.txtCpf.TabIndex = 88;
-            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(899, 147);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 20);
-            this.label8.TabIndex = 87;
-            this.label8.Text = "CPF:";
-            // 
-            // txtRG
-            // 
-            this.txtRG.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtRG.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtRG.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRG.Location = new System.Drawing.Point(903, 112);
-            this.txtRG.Multiline = true;
-            this.txtRG.Name = "txtRG";
-            this.txtRG.Size = new System.Drawing.Size(311, 28);
-            this.txtRG.TabIndex = 86;
-            this.txtRG.TextChanged += new System.EventHandler(this.txtRG_TextChanged);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(899, 86);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(113, 20);
-            this.label10.TabIndex = 85;
-            this.label10.Text = "Registro Geral:";
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTelefone.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelefone.Location = new System.Drawing.Point(903, 244);
-            this.txtTelefone.Multiline = true;
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(311, 28);
-            this.txtTelefone.TabIndex = 88;
-            this.txtTelefone.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(899, 219);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 20);
-            this.label11.TabIndex = 87;
-            this.label11.Text = "Telefone:";
-            // 
-            // txtDataMatricula
-            // 
-            this.txtDataMatricula.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtDataMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDataMatricula.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataMatricula.Location = new System.Drawing.Point(552, 113);
-            this.txtDataMatricula.Multiline = true;
-            this.txtDataMatricula.Name = "txtDataMatricula";
-            this.txtDataMatricula.Size = new System.Drawing.Size(311, 28);
-            this.txtDataMatricula.TabIndex = 17;
-            this.txtDataMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
             // 
             // menuContainer
             // 
@@ -445,7 +145,7 @@
             this.menuContainer.Location = new System.Drawing.Point(0, 0);
             this.menuContainer.Margin = new System.Windows.Forms.Padding(0);
             this.menuContainer.Name = "menuContainer";
-            this.menuContainer.Size = new System.Drawing.Size(203, 46);
+            this.menuContainer.Size = new System.Drawing.Size(203, 48);
             this.menuContainer.TabIndex = 111;
             // 
             // panel6
@@ -460,9 +160,10 @@
             // menu
             // 
             this.menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.menu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.menu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menu.ForeColor = System.Drawing.Color.White;
-            this.menu.Image = ((System.Drawing.Image)(resources.GetObject("menu.Image")));
+            this.menu.Image = global::PII.Properties.Resources.User_Male;
             this.menu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.menu.Location = new System.Drawing.Point(-16, -12);
             this.menu.Margin = new System.Windows.Forms.Padding(0);
@@ -472,6 +173,7 @@
             this.menu.TabIndex = 4;
             this.menu.Text = "Cadastros";
             this.menu.UseVisualStyleBackColor = false;
+            this.menu.Click += new System.EventHandler(this.menu_Click_1);
             // 
             // label13
             // 
@@ -508,6 +210,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Aluno";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel7
             // 
@@ -559,6 +262,7 @@
             this.button6.TabIndex = 3;
             this.button6.Text = "Professor";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // panel10
             // 
@@ -610,57 +314,12 @@
             this.button9.TabIndex = 3;
             this.button9.Text = "Cursos e Disciplinas";
             this.button9.UseVisualStyleBackColor = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.button4);
-            this.panel5.Location = new System.Drawing.Point(3, 149);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(203, 44);
-            this.panel5.TabIndex = 112;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(-23, -10);
-            this.button4.Name = "button4";
-            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 90, 0);
-            this.button4.Size = new System.Drawing.Size(235, 68);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Boletim";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Location = new System.Drawing.Point(3, 99);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(203, 44);
-            this.panel3.TabIndex = 110;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(-23, -10);
-            this.button2.Name = "button2";
-            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 50, 0);
-            this.button2.Size = new System.Drawing.Size(232, 68);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Aulas de reforço";
-            this.button2.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.button3);
-            this.panel13.Location = new System.Drawing.Point(3, 49);
+            this.panel13.Location = new System.Drawing.Point(3, 51);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 0, 90, 0);
             this.panel13.Size = new System.Drawing.Size(203, 44);
@@ -669,6 +328,7 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
@@ -681,36 +341,389 @@
             this.button3.Text = "Ouvidoria";
             this.button3.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.button2);
+            this.panel3.Location = new System.Drawing.Point(3, 101);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(203, 44);
+            this.panel3.TabIndex = 110;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(-23, -10);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(25, 0, 50, 0);
+            this.button2.Size = new System.Drawing.Size(232, 68);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Aulas de reforço";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.button4);
+            this.panel5.Location = new System.Drawing.Point(3, 151);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(203, 44);
+            this.panel5.TabIndex = 112;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(-23, -10);
+            this.button4.Name = "button4";
+            this.button4.Padding = new System.Windows.Forms.Padding(25, 0, 90, 0);
+            this.button4.Size = new System.Drawing.Size(235, 68);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Boletim";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(button10);
-            this.panel4.Location = new System.Drawing.Point(3, 199);
+            this.panel4.Location = new System.Drawing.Point(3, 201);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(163, 44);
             this.panel4.TabIndex = 109;
             // 
-            // button10
+            // UNIFENAS
             // 
-            button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button10.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button10.ForeColor = System.Drawing.Color.White;
-            button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button10.Location = new System.Drawing.Point(-23, -10);
-            button10.Name = "button10";
-            button10.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
-            button10.Size = new System.Drawing.Size(213, 68);
-            button10.TabIndex = 3;
-            button10.Text = "Sair";
-            button10.UseVisualStyleBackColor = false;
+            this.UNIFENAS.AutoSize = true;
+            this.UNIFENAS.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UNIFENAS.ForeColor = System.Drawing.Color.White;
+            this.UNIFENAS.Location = new System.Drawing.Point(61, 8);
+            this.UNIFENAS.Name = "UNIFENAS";
+            this.UNIFENAS.Size = new System.Drawing.Size(68, 17);
+            this.UNIFENAS.TabIndex = 2;
+            this.UNIFENAS.Text = "UNIFENAS";
+            this.UNIFENAS.Click += new System.EventHandler(this.UNIFENAS_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.UNIFENAS);
+            this.panel1.Controls.Add(this.btnHam);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1236, 32);
+            this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1194, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 21);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // btnHam
+            // 
+            this.btnHam.Image = ((System.Drawing.Image)(resources.GetObject("btnHam.Image")));
+            this.btnHam.Location = new System.Drawing.Point(12, 3);
+            this.btnHam.Name = "btnHam";
+            this.btnHam.Size = new System.Drawing.Size(31, 25);
+            this.btnHam.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.btnHam.TabIndex = 1;
+            this.btnHam.TabStop = false;
+            this.btnHam.Click += new System.EventHandler(this.btnHam_Click);
+            // 
+            // menuTransition
+            // 
+            this.menuTransition.Interval = 10;
+            this.menuTransition.Tick += new System.EventHandler(this.menuTransition_Tick);
+            // 
+            // sidebarTransition
+            // 
+            this.sidebarTransition.Interval = 10;
+            this.sidebarTransition.Tick += new System.EventHandler(this.sidebarTransition_Tick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(430, 94);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 20);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "Matricula:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(430, 165);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(152, 20);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Data de nascimento:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtData.Location = new System.Drawing.Point(434, 193);
+            this.txtData.Multiline = true;
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(311, 28);
+            this.txtData.TabIndex = 22;
+            this.txtData.TextChanged += new System.EventHandler(this.txtData_TextChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(430, 229);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(53, 20);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Curso:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.ForeColor = System.Drawing.Color.White;
+            this.button7.Location = new System.Drawing.Point(1099, 254);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(100, 26);
+            this.button7.TabIndex = 28;
+            this.button7.Text = "Finalizar";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // comboBoxCurso
+            // 
+            this.comboBoxCurso.AutoCompleteCustomSource.AddRange(new string[] {
+            "matematica"});
+            this.comboBoxCurso.BackColor = System.Drawing.SystemColors.Menu;
+            this.comboBoxCurso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBoxCurso.FormattingEnabled = true;
+            this.comboBoxCurso.Items.AddRange(new object[] {
+            "Matematica"});
+            this.comboBoxCurso.Location = new System.Drawing.Point(434, 264);
+            this.comboBoxCurso.Name = "comboBoxCurso";
+            this.comboBoxCurso.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxCurso.TabIndex = 29;
+            this.comboBoxCurso.SelectedIndexChanged += new System.EventHandler(this.comboBoxCurso_SelectedIndexChanged);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Location = new System.Drawing.Point(43, 292);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1192, 53);
+            this.panel8.TabIndex = 34;
+            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(471, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(192, 30);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "LISTA DE ALUNOS";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // dataGridAlunos
+            // 
+            this.dataGridAlunos.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridAlunos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAlunos.Location = new System.Drawing.Point(43, 337);
+            this.dataGridAlunos.Name = "dataGridAlunos";
+            this.dataGridAlunos.Size = new System.Drawing.Size(1192, 343);
+            this.dataGridAlunos.TabIndex = 35;
+            this.dataGridAlunos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridAlunos_CellContentClick);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Location = new System.Drawing.Point(64, 48);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(120, 30);
+            this.label9.TabIndex = 77;
+            this.label9.Text = "REGISTRO:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(65, 228);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 20);
+            this.label4.TabIndex = 83;
+            this.label4.Text = "E-MAIL:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(65, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.TabIndex = 79;
+            this.label1.Text = "NOME:";
+            // 
+            // txtNome
+            // 
+            this.txtNome.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNome.Location = new System.Drawing.Point(69, 118);
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(311, 28);
+            this.txtNome.TabIndex = 80;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged_1);
+            // 
+            // txtEmail
+            // 
+            this.txtEmail.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(69, 252);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(311, 28);
+            this.txtEmail.TabIndex = 84;
+            this.txtEmail.TextChanged += new System.EventHandler(this.txtEmail_TextChanged_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(65, 160);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.TabIndex = 81;
+            this.label2.Text = "ENDEREÇO:";
+            // 
+            // txtEndereco
+            // 
+            this.txtEndereco.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtEndereco.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEndereco.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.Location = new System.Drawing.Point(69, 184);
+            this.txtEndereco.Multiline = true;
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(311, 28);
+            this.txtEndereco.TabIndex = 82;
+            this.txtEndereco.TextChanged += new System.EventHandler(this.txtEndereco_TextChanged_1);
+            // 
+            // txtCpf
+            // 
+            this.txtCpf.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtCpf.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCpf.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.Location = new System.Drawing.Point(773, 196);
+            this.txtCpf.Multiline = true;
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.Size = new System.Drawing.Size(311, 28);
+            this.txtCpf.TabIndex = 88;
+            this.txtCpf.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(769, 165);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 20);
+            this.label8.TabIndex = 87;
+            this.label8.Text = "CPF:";
+            // 
+            // txtRG
+            // 
+            this.txtRG.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtRG.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtRG.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRG.Location = new System.Drawing.Point(773, 125);
+            this.txtRG.Multiline = true;
+            this.txtRG.Name = "txtRG";
+            this.txtRG.Size = new System.Drawing.Size(311, 28);
+            this.txtRG.TabIndex = 86;
+            this.txtRG.TextChanged += new System.EventHandler(this.txtRG_TextChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(769, 98);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(113, 20);
+            this.label10.TabIndex = 85;
+            this.label10.Text = "Registro Geral:";
+            // 
+            // txtTelefone
+            // 
+            this.txtTelefone.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtTelefone.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefone.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.Location = new System.Drawing.Point(773, 252);
+            this.txtTelefone.Multiline = true;
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(311, 28);
+            this.txtTelefone.TabIndex = 88;
+            this.txtTelefone.TextChanged += new System.EventHandler(this.txtCpf_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(769, 227);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(72, 20);
+            this.label11.TabIndex = 87;
+            this.label11.Text = "Telefone:";
+            // 
+            // txtDataMatricula
+            // 
+            this.txtDataMatricula.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtDataMatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDataMatricula.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDataMatricula.Location = new System.Drawing.Point(434, 121);
+            this.txtDataMatricula.Multiline = true;
+            this.txtDataMatricula.Name = "txtDataMatricula";
+            this.txtDataMatricula.Size = new System.Drawing.Size(311, 28);
+            this.txtDataMatricula.TabIndex = 17;
+            this.txtDataMatricula.TextChanged += new System.EventHandler(this.txtMatricula_TextChanged);
             // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1441, 680);
+            this.ClientSize = new System.Drawing.Size(1236, 680);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.sideBar);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label11);
@@ -727,10 +740,8 @@
             this.Controls.Add(this.dataGridAlunos);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.comboBoxCurso);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtData);
-            this.Controls.Add(this.sideBar);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.txtDataMatricula);
@@ -740,13 +751,6 @@
             this.Text = "registro";
             this.Load += new System.EventHandler(this.registro_Load);
             this.sideBar.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridAlunos)).EndInit();
             this.menuContainer.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
@@ -755,10 +759,17 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHam)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAlunos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

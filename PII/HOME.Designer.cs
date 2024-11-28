@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Button button3;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HOME));
-            System.Windows.Forms.Button button18;
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnHam = new System.Windows.Forms.PictureBox();
@@ -49,6 +48,10 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.button15 = new System.Windows.Forms.Button();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.button16 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -76,16 +79,8 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.button15 = new System.Windows.Forms.Button();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.button16 = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.button17 = new System.Windows.Forms.Button();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             button3 = new System.Windows.Forms.Button();
-            button18 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
@@ -97,6 +92,8 @@
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
+            this.panel18.SuspendLayout();
+            this.panel19.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -108,10 +105,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.panel21.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -125,7 +118,7 @@
             button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             button3.Location = new System.Drawing.Point(-23, -10);
             button3.Name = "button3";
-            button3.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
+            button3.Padding = new System.Windows.Forms.Padding(20, 0, 111, 0);
             button3.Size = new System.Drawing.Size(235, 68);
             button3.TabIndex = 3;
             button3.Text = "Sair";
@@ -144,6 +137,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(1005, 7);
             this.pictureBox2.Name = "pictureBox2";
@@ -169,10 +163,13 @@
             this.sideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
             this.sideBar.Controls.Add(this.menuContainer);
             this.sideBar.Controls.Add(this.panel18);
+            this.sideBar.Controls.Add(this.panel19);
+            this.sideBar.Controls.Add(this.panel5);
+            this.sideBar.Controls.Add(this.panel4);
             this.sideBar.Dock = System.Windows.Forms.DockStyle.Left;
             this.sideBar.Location = new System.Drawing.Point(0, 32);
             this.sideBar.Name = "sideBar";
-            this.sideBar.Size = new System.Drawing.Size(193, 659);
+            this.sideBar.Size = new System.Drawing.Size(43, 659);
             this.sideBar.TabIndex = 1;
             // 
             // menuContainer
@@ -348,10 +345,59 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.button15);
+            this.panel18.Location = new System.Drawing.Point(3, 45);
+            this.panel18.Name = "panel18";
+            this.panel18.Padding = new System.Windows.Forms.Padding(0, 0, 90, 0);
+            this.panel18.Size = new System.Drawing.Size(203, 44);
+            this.panel18.TabIndex = 118;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button15.ForeColor = System.Drawing.Color.White;
+            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
+            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button15.Location = new System.Drawing.Point(-23, -10);
+            this.button15.Name = "button15";
+            this.button15.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
+            this.button15.Size = new System.Drawing.Size(232, 68);
+            this.button15.TabIndex = 3;
+            this.button15.Text = "Ouvidoria";
+            this.button15.UseVisualStyleBackColor = false;
+            // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.button16);
+            this.panel19.Location = new System.Drawing.Point(3, 95);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(203, 44);
+            this.panel19.TabIndex = 115;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button16.ForeColor = System.Drawing.Color.White;
+            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
+            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button16.Location = new System.Drawing.Point(-23, -10);
+            this.button16.Name = "button16";
+            this.button16.Padding = new System.Windows.Forms.Padding(25, 0, 48, 0);
+            this.button16.Size = new System.Drawing.Size(232, 68);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "Aulas de reforço";
+            this.button16.UseVisualStyleBackColor = false;
+            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.button4);
-            this.panel5.Location = new System.Drawing.Point(345, 113);
+            this.panel5.Location = new System.Drawing.Point(3, 145);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(203, 44);
             this.panel5.TabIndex = 6;
@@ -375,7 +421,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(button3);
-            this.panel4.Location = new System.Drawing.Point(345, 163);
+            this.panel4.Location = new System.Drawing.Point(3, 195);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(163, 44);
             this.panel4.TabIndex = 2;
@@ -621,100 +667,6 @@
             this.pictureBox3.TabIndex = 16;
             this.pictureBox3.TabStop = false;
             // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.button15);
-            this.panel18.Location = new System.Drawing.Point(3, 45);
-            this.panel18.Name = "panel18";
-            this.panel18.Padding = new System.Windows.Forms.Padding(0, 0, 90, 0);
-            this.panel18.Size = new System.Drawing.Size(203, 44);
-            this.panel18.TabIndex = 118;
-            // 
-            // button15
-            // 
-            this.button15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button15.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button15.ForeColor = System.Drawing.Color.White;
-            this.button15.Image = ((System.Drawing.Image)(resources.GetObject("button15.Image")));
-            this.button15.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button15.Location = new System.Drawing.Point(-23, -10);
-            this.button15.Name = "button15";
-            this.button15.Padding = new System.Windows.Forms.Padding(25, 0, 80, 0);
-            this.button15.Size = new System.Drawing.Size(232, 68);
-            this.button15.TabIndex = 3;
-            this.button15.Text = "Ouvidoria";
-            this.button15.UseVisualStyleBackColor = false;
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.button16);
-            this.panel19.Location = new System.Drawing.Point(411, 549);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(203, 44);
-            this.panel19.TabIndex = 115;
-            // 
-            // button16
-            // 
-            this.button16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button16.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button16.ForeColor = System.Drawing.Color.White;
-            this.button16.Image = ((System.Drawing.Image)(resources.GetObject("button16.Image")));
-            this.button16.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button16.Location = new System.Drawing.Point(-23, -10);
-            this.button16.Name = "button16";
-            this.button16.Padding = new System.Windows.Forms.Padding(25, 0, 50, 0);
-            this.button16.Size = new System.Drawing.Size(232, 68);
-            this.button16.TabIndex = 3;
-            this.button16.Text = "Aulas de reforço";
-            this.button16.UseVisualStyleBackColor = false;
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.button17);
-            this.panel20.Location = new System.Drawing.Point(424, 623);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(203, 44);
-            this.panel20.TabIndex = 117;
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            this.button17.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ForeColor = System.Drawing.Color.White;
-            this.button17.Image = ((System.Drawing.Image)(resources.GetObject("button17.Image")));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(-23, -10);
-            this.button17.Name = "button17";
-            this.button17.Padding = new System.Windows.Forms.Padding(25, 0, 90, 0);
-            this.button17.Size = new System.Drawing.Size(235, 68);
-            this.button17.TabIndex = 3;
-            this.button17.Text = "Boletim";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(button18);
-            this.panel21.Location = new System.Drawing.Point(424, 673);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(163, 44);
-            this.panel21.TabIndex = 114;
-            // 
-            // button18
-            // 
-            button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(24)))), ((int)(((byte)(29)))));
-            button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            button18.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            button18.ForeColor = System.Drawing.Color.White;
-            button18.Image = ((System.Drawing.Image)(resources.GetObject("button18.Image")));
-            button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            button18.Location = new System.Drawing.Point(-23, -10);
-            button18.Name = "button18";
-            button18.Padding = new System.Windows.Forms.Padding(20, 0, 80, 0);
-            button18.Size = new System.Drawing.Size(213, 68);
-            button18.TabIndex = 3;
-            button18.Text = "Sair";
-            button18.UseVisualStyleBackColor = false;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -730,12 +682,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 691);
-            this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.sideBar);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -768,6 +715,8 @@
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
+            this.panel18.ResumeLayout(false);
+            this.panel19.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -781,10 +730,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -840,9 +785,6 @@
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Panel panel21;
         private System.Windows.Forms.Label label9;
     }
 }
