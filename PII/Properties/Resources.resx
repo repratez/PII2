@@ -142,6 +142,9 @@
   <data name="definitiva" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\definitiva.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Copybook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Copybook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Smaller Network Connection Background - ganesh ganesh (720p, h264, youtube)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Smaller Network Connection Background - ganesh ganesh (720p, h264, youtube).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -159,5 +162,8 @@
   </data>
   <data name="icons8-cancelar-20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-cancelar-20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Envelope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Envelope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

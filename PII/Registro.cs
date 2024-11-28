@@ -17,6 +17,7 @@ namespace PII
         Conexao conexao = new Conexao();
         public registro()
         {
+           
 
             InitializeComponent();
             dataGridAlunos.RowPostPaint += dataGridAlunos_RowPostPaint;
@@ -186,6 +187,9 @@ namespace PII
 
                 // Limpa os campos após a inserção
                 LimparCampos();
+
+                // Atualiza o DataGrid com os novos dados
+                CarregarDadosAlunos();  // Isso irá recarregar os dados no DataGridView
             }
             catch (Exception ex)
             {
@@ -217,16 +221,56 @@ namespace PII
 
         private void CarregarDadosAlunos()
         {
-            DataTable alunos = conexao.ObterAlunos();
-            if (alunos.Rows.Count == 0)
+            try
             {
-                MessageBox.Show("Nenhum aluno encontrado.");
+                // Carrega os dados dos alunos
+                DataTable alunos = conexao.ObterAlunos();
+
+                if (alunos == null)
+                {
+                    MessageBox.Show("Erro ao carregar os dados dos alunos.");
+                    return;
+                }
+
+                if (alunos.Rows.Count == 0)
+                {
+                    MessageBox.Show("Nenhum aluno encontrado.");
+                }
+                else
+                {
+                    // Exibe os dados no DataGridView
+                    dataGridAlunos.DataSource = alunos;
+
+                    // Diagnóstico: Exibe os nomes das colunas para verificação
+                    StringBuilder sb = new StringBuilder();
+                    foreach (DataColumn coluna in alunos.Columns)
+                    {
+                        sb.AppendLine(coluna.ColumnName); // Exibe o nome de cada coluna
+                    }
+                   
+
+                    // Altera os títulos das colunas para exibir nomes amigáveis
+                    if (alunos.Columns.Contains("nomeAluno"))  // Verifique se o nome da coluna é 'nomeAluno' ou outro
+                        dataGridAlunos.Columns["nomeAluno"].HeaderText = "Nome";
+                    if (alunos.Columns.Contains("dataNascimento"))
+                        dataGridAlunos.Columns["dataNascimento"].HeaderText = "Data de Nascimento";
+                    if (alunos.Columns.Contains("endereco"))
+                        dataGridAlunos.Columns["endereco"].HeaderText = "Endereço";
+                    if (alunos.Columns.Contains("email"))
+                        dataGridAlunos.Columns["email"].HeaderText = "Email";
+                    if (alunos.Columns.Contains("nomeCurso"))  // Verifique se o nome da coluna é 'nomeCurso' ou outro
+                        dataGridAlunos.Columns["nomeCurso"].HeaderText = "Curso";
+
+                    // Ajusta o tamanho das colunas
+                    AjustarTamanhoColunas();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                dataGridAlunos.DataSource = alunos; // Exibe os dados no DataGridView
+                MessageBox.Show($"Erro ao carregar dados: {ex.Message}");
             }
         }
+
 
         private void AjustarTamanhoColunas()
         {
@@ -517,6 +561,11 @@ namespace PII
 
             RegistrarCurso registrar = new RegistrarCurso();
             registrar.ShowDialog();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -93,9 +93,29 @@ namespace PII.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Copybook {
+            get {
+                object obj = ResourceManager.GetObject("Copybook", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap definitiva {
             get {
                 object obj = ResourceManager.GetObject("definitiva", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Envelope {
+            get {
+                object obj = ResourceManager.GetObject("Envelope", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

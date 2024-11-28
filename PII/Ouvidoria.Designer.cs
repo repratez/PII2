@@ -66,9 +66,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button10 = new System.Windows.Forms.Button();
             this.panel12 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -98,7 +95,6 @@
             this.panel4.SuspendLayout();
             this.sideBar.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel8.SuspendLayout();
@@ -404,6 +400,7 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(66, 177);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -499,9 +496,10 @@
             // textBox2
             // 
             this.textBox2.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(311, 494);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(183, 22);
+            this.textBox2.Size = new System.Drawing.Size(183, 35);
             this.textBox2.TabIndex = 23;
             // 
             // label5
@@ -514,44 +512,12 @@
             this.label5.TabIndex = 21;
             this.label5.Text = "MATRÍCULA:";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(561, 358);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(250, 20);
-            this.label6.TabIndex = 21;
-            this.label6.Text = "ANEXAR AQUI SUAS EVIDÊNCIAS:";
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(580, 527);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(122, 35);
-            this.button7.TabIndex = 24;
-            this.button7.Text = "ANEXAR";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(565, 386);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(274, 135);
-            this.dataGridView1.TabIndex = 25;
-            // 
             // button10
             // 
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(708, 527);
+            this.button10.Location = new System.Drawing.Point(567, 494);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(122, 35);
             this.button10.TabIndex = 24;
@@ -669,9 +635,10 @@
             // textBox3
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBox3.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(311, 386);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(183, 22);
+            this.textBox3.Size = new System.Drawing.Size(183, 35);
             this.textBox3.TabIndex = 79;
             // 
             // Ouvidoria
@@ -684,12 +651,9 @@
             this.Controls.Add(this.sideBar);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel12);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button10);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
@@ -720,7 +684,6 @@
             this.sideBar.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -771,9 +734,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Label label9;

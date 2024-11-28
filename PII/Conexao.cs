@@ -140,7 +140,7 @@ namespace PII
                 {
                     SqlDataAdapter da = new SqlDataAdapter(cmd);
                     da.Fill(alunos);  // Preenche o DataTable com os dados
-                    MessageBox.Show("Dados carregados: " + alunos.Rows.Count.ToString() + " registros.");
+                    
                 }
                 catch (Exception ex)
                 {

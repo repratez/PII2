@@ -62,12 +62,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aluno.cs" />
     <Compile Include="Aula.cs" />
     <Compile Include="Boletim.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Boletim.Designer.cs">
       <DependentUpon>Boletim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoletimClasse.cs" />
+    <Compile Include="BoletimProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoletimProfessor.Designer.cs">
+      <DependentUpon>BoletimProfessor.cs</DependentUpon>
     </Compile>
     <Compile Include="Conexao.cs" />
     <Compile Include="ConexaoNeo4j.cs" />
@@ -78,6 +86,12 @@
     </Compile>
     <Compile Include="Editar.Designer.cs">
       <DependentUpon>Editar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAluno.Designer.cs">
+      <DependentUpon>EditarAluno.cs</DependentUpon>
     </Compile>
     <Compile Include="EditarAula.cs">
       <SubType>Form</SubType>
@@ -156,8 +170,14 @@
     <EmbeddedResource Include="Boletim.resx">
       <DependentUpon>Boletim.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BoletimProfessor.resx">
+      <DependentUpon>BoletimProfessor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Editar.resx">
       <DependentUpon>Editar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarAluno.resx">
+      <DependentUpon>EditarAluno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarAula.resx">
       <DependentUpon>EditarAula.cs</DependentUpon>
@@ -271,6 +291,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Copybook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Envelope.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
