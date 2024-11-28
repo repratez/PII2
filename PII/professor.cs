@@ -1,60 +1,59 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace PII
 {
-    internal class professor
+    internal class Professor
     {
-
         private Conexao objetoConexao = new Conexao();
 
-        private int idProfessor;
-        private string nomeProfessor;
-        private string email;
-        private string senha;
-        private string telefone;
-        private int idDisciplina;
-        private int idCurso;
-        private string Endereco;
-        private DateTime date;
-        private string cpf;
-        private string rg;
+        public int IdProfessor { get; set; }
+        public string NomeProfessor { get; set; }
+        public string Email { get; set; }
+        public string Telefone { get; set; }
+        public string Senha { get; set; }
+        public int IdDisciplina { get; set; }
+        public int IdCurso { get; set; }
+        public string Endereco { get; set; }
+        public DateTime DataNascimento { get; set; }
+        public string Cpf { get; set; }
+        public string Rg { get; set; }
 
-
-        public int IdProfessor { get => idProfessor; set => idProfessor = value; }
-        public string NomeProfessor { get => nomeProfessor; set => nomeProfessor = value; }
-        public string Email { get => email; set => email = value; }
-       
-        public string Telefone { get => telefone; set => telefone = value; }
-        public int IdDisciplina { get => idDisciplina; set => idDisciplina = value; }
-        public int IdCurso { get => idCurso; set => idCurso = value; }
-        public string Endereco1 { get => Endereco; set => Endereco = value; }
-        public DateTime Date { get => date; set => date = value; }
-        public string Cpf { get => cpf; set => cpf = value; }
-        public string Rg { get => rg; set => rg = value; }
-        public string Senha { get => senha; set => senha = value; }
+        private string formacao;
+        public string Formacao { get => formacao; set => formacao = value; }
 
         public void Incluir()
         {
-            string sql = "";
-            sql += "INSERT INTO Curso (nomeProfessor, email, senha, telefone, idDisciplina, idCurso, endereco, dataNascimento, cpf, rg) VALUES (";
-            sql += "'" + nomeProfessor + "', "; // Nome do professor
-            sql += "'" + email + "', ";        // Email
-            sql += "'" + Senha + "', ";     // Senha
-            sql += "'" + Telefone + "', ";     // Telefone
-            sql += IdDisciplina + ", ";        // Id da disciplina (sem aspas, pois é numérico)
-            sql += IdCurso + ", ";             // Id do curso (sem aspas, pois é numérico)
-            sql += "'" + Endereco + "', ";     // Endereço
-            sql += "'" + date.ToString("yyyy-MM-dd") + "', "; // Data de nascimento (formato padrão de banco de dados)
-            sql += "'" + cpf + "', ";          // CPF
-            sql += "'" + rg + "');";           // RG
+            string sql = "INSERT INTO Professor (nomeProfessor, email, senha, telefone, idDisciplina, idCurso, endereco, dataNascimento, cpf, rg) " +
+                         "VALUES (@nomeProfessor, @Email, @Senha, @Telefone, @IdDisciplina, @IdCurso, @Endereco, @DataNascimento, @Cpf, @Rg)";
 
-            objetoConexao.Conectar();
-            objetoConexao.Executar(sql);
-            objetoConexao.Desconectar();
+            try
+            {
+                using (SqlCommand cmd = new SqlCommand(sql, objetoConexao.Conectar()))
+                {
+                    // Adicionar parâmetros
+                    cmd.Parameters.AddWithValue("@nomeProfessor", NomeProfessor);
+                    cmd.Parameters.AddWithValue("@Email", Email);
+                    cmd.Parameters.AddWithValue("@Senha", Senha);
+                    cmd.Parameters.AddWithValue("@Telefone", Telefone);
+                    cmd.Parameters.AddWithValue("@IdDisciplina", IdDisciplina);
+                    cmd.Parameters.AddWithValue("@IdCurso", IdCurso);
+                    cmd.Parameters.AddWithValue("@Endereco", Endereco);
+                    cmd.Parameters.AddWithValue("@DataNascimento", DataNascimento);
+                    cmd.Parameters.AddWithValue("@Cpf", Cpf);
+                    cmd.Parameters.AddWithValue("@Rg", Rg);
+
+                    // Executa o comando de inserção
+                    cmd.ExecuteNonQuery();
+                }
+                // Fechar a conexão
+                objetoConexao.Desconectar();
+            }
+            catch (Exception ex)
+            {
+                // Se houver erro, exibir a mensagem
+                throw new Exception("Erro ao inserir professor: " + ex.Message);
+            }
         }
 
 

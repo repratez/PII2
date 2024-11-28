@@ -16,16 +16,23 @@ namespace PII
 
 
 
-        public void Conectar()
+        public SqlConnection Conectar()
         {
-            string aux = "SERVER=.\\SQLEXPRESS;Database=GestaoEscolar;UID=sa;PWD=123";
-            conn.ConnectionString = aux;
-            conn.Open();
+            if (conn.State == System.Data.ConnectionState.Closed)
+            {
+                string aux = "SERVER=.\\SQLEXPRESS;Database=GestaoEscolar;UID=sa;PWD=123";
+                conn.ConnectionString = aux;
+                conn.Open();
+            }
+            return conn;
         }
 
         public void Desconectar()
         {
-            conn.Close();
+            if (conn.State == System.Data.ConnectionState.Open)
+            {
+                conn.Close();
+            }
         }
 
         public void Executar(string sql)

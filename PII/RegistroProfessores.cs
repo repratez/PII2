@@ -169,27 +169,47 @@ namespace PII
             HOME reg= new HOME();
             reg.ShowDialog();
         }
-
-        professor aux = new professor();
-
         private void registrar_Click(object sender, EventArgs e)
         {
-            professor professor = new professor();
+            try
+            {
+                // Criação do objeto Professor
+                Professor professor = new Professor
+                {
+                    NomeProfessor = txtNome.Text,
+                    Endereco = txtEndereco.Text,
+                    Email = txtEmail.Text,
+                    Telefone = txtTelefone.Text,
+                    DataNascimento = DateTime.Parse(txtData.Text),
+                    IdCurso = int.Parse(comboBoxCurso.SelectedValue.ToString()),
+                    IdDisciplina = int.Parse(cboDisciplina.SelectedValue.ToString()),
+                    Cpf = txtCpf.Text,
+                    Rg = txtRg.Text,
+                    Senha = "SenhaPadrão123", // Substitua com lógica para senha, se necessário
+                    Formacao = textBox3.Text
+                };
 
-            aux.NomeProfessor = txtNome.Text;
-            aux.Endereco1 = txtEndereco.Text;
-            aux.Email = txtEmail.Text;
-            aux.Telefone = txtTelefone.Text;
-            aux.Date = aux.Date = DateTime.Parse(txtData.Text);
-            aux.IdCurso = int.Parse(comboBoxCurso.SelectedValue.ToString());
-            aux.IdDisciplina = int.Parse(cboDisciplina.SelectedValue.ToString());
-            aux.Cpf = txtCpf.Text;
-            aux.Rg = txtRg.Text;
+                // Inserir no banco de dados
+                professor.Incluir();
+                MessageBox.Show("Professor incluído com sucesso!");
 
-            professor.Incluir();
-            MessageBox.Show("Produto incluido com sucesso!");
-            txtNome.Clear();
-            
+                // Limpar os campos do formulário
+                txtNome.Clear();
+                txtEndereco.Clear();
+                txtEmail.Clear();
+                txtTelefone.Clear();
+                txtData.Clear();
+                comboBoxCurso.SelectedIndex = -1;
+                cboDisciplina.SelectedIndex = -1;
+                txtCpf.Clear();
+                txtRg.Clear();
+                textBox3.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Erro ao incluir professor: {ex.Message}");
+            }
+
 
         }
 

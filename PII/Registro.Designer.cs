@@ -852,7 +852,7 @@
         private System.Windows.Forms.Timer menuTransition;
         private System.Windows.Forms.Timer sidebarTransition;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        //private System.Windows.Forms.PictureBox pictureBox1; lembrar do porque eu comentei isso 
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Label label3;
